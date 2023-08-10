@@ -40,7 +40,7 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+        messageElement.textContent = "Your API key is Expired!";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
